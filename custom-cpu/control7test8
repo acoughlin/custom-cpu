@@ -1,0 +1,124 @@
+<control>
+<control path>
+<pathname>path</pathname>
+<state>
+<statename>state 0</statename>
+<microinstruction>
+<input opcode>X</input>
+<input RA>X</input>
+<mux mem.mux>0</mux>
+<alu ALU176>X</alu>
+<mux RegBmux>X</mux>
+<mux PCloopmux>X</mux>
+</microinstruction>
+<nextstate>
+<input opcode>X</input>
+<input RA>X</input>
+<nextstatename>fetch</nextstatename>
+</nextstate>
+</state>
+<state>
+<statename>fetch</statename>
+<microinstruction>
+<input opcode>X</input>
+<input RA>X</input>
+<reg PC></reg>
+<reg instruction></reg>
+<mux mem.mux>0</mux>
+<alu ALU176>X</alu>
+<mux RegBmux>X</mux>
+<mux PCloopmux>X</mux>
+</microinstruction>
+<nextstate>
+<input opcode>X</input>
+<input RA>X</input>
+<nextstatename>decode</nextstatename>
+</nextstate>
+</state>
+<state>
+<statename>decode</statename>
+<microinstruction>
+<input opcode>2</input>
+<input RA>0</input>
+<reg PC></reg>
+<reg RegisterA></reg>
+<mux mem.mux>0</mux>
+<alu ALU176>X</alu>
+<mux RegBmux>X</mux>
+<mux PCloopmux>0</mux>
+</microinstruction>
+<microinstruction>
+<input opcode>2</input>
+<input RA>1</input>
+<reg PC></reg>
+<reg RegisterB></reg>
+<mux mem.mux>0</mux>
+<alu ALU176>X</alu>
+<mux RegBmux>0</mux>
+<mux PCloopmux>0</mux>
+</microinstruction>
+<microinstruction>
+<input opcode>2</input>
+<input RA>2</input>
+<reg PC></reg>
+<reg RegisterC></reg>
+<mux mem.mux>0</mux>
+<alu ALU176>X</alu>
+<mux RegBmux>X</mux>
+<mux PCloopmux>0</mux>
+</microinstruction>
+<microinstruction>
+<input opcode>2</input>
+<input RA>3</input>
+<reg RegisterD></reg>
+<mux mem.mux>0</mux>
+<alu ALU176>X</alu>
+<mux RegBmux>X</mux>
+<mux PCloopmux>0</mux>
+</microinstruction>
+<microinstruction>
+<input opcode>0</input>
+<input RA>1</input>
+<reg Memory></reg>
+<mux mem.mux>1</mux>
+<alu ALU176>X</alu>
+<mux RegBmux>X</mux>
+<mux PCloopmux>0</mux>
+</microinstruction>
+<microinstruction>
+<input opcode>0</input>
+<input RA>1</input>
+<reg Memory></reg>
+<mux mem.mux>1</mux>
+<alu ALU176>X</alu>
+<mux RegBmux>X</mux>
+<mux PCloopmux>0</mux>
+</microinstruction>
+<microinstruction>
+<input opcode>5</input>
+<input RA>1</input>
+<reg PC></reg>
+<reg RegisterB></reg>
+<mux mem.mux>0</mux>
+<alu ALU176>-</alu>
+<mux RegBmux>1</mux>
+<mux PCloopmux>0</mux>
+</microinstruction>
+<microinstruction>
+<input opcode>4</input>
+<input RA>1</input>
+<reg PC></reg>
+<mux mem.mux>2</mux>
+<alu ALU176>X</alu>
+<mux RegBmux>X</mux>
+<mux PCloopmux>1</mux>
+</microinstruction>
+<nextstate>
+<input opcode>X</input>
+<input RA>X</input>
+<nextstatename>fetch</nextstatename>
+</nextstate>
+</state>
+</control path>
+</control>
+
