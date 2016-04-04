@@ -1,8 +1,10 @@
 I DID NOT CREATE AND I DO NOT OWN OR HAVE ANY RIGHTS TO EMUMAKER86. IT WAS CREATED BY DR. MICHAEL BLACK.
 
-This readme will explain the processor and ISA of this final project for Systems Level Computing.
+This readme will explain the processor I designed and ISA I created for this final project for Systems Level Computing. More details about the project may be found in the "isa notes" text document.
 
-The processor contains 4 5-bit registers and an 8-bit program counter. It needs to be loaded with a program that will execute this loop:
+I designed my CPU model in EmuMaker86 using concepts I learned in the class. It runs with 8 bits of memory, 4 8-bit registers, and 1 instruction register. It has 1 arithmetic logic unit. The instruction register feeds into a splitter, which is connected to the control unit. The control unit controls the state of several multiplexors, as well as the registers. When the instruction is split by the splitter from one 8-bit instruction into two 4-bit instructions, these two signals are used to tell the control unit which datapath shold be taken next. The CPU was essentially built specifically to execute this one program.
+
+The memory must be loaded with a program that will execute this loop:
 
 char x, n, i;
 n=5;
